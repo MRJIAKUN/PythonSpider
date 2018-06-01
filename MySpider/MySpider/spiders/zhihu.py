@@ -65,8 +65,8 @@ class ZhihuSpider(scrapy.Spider):
                 url="https://www.zhihu.com/login/phone_num",
                 formdata = {
                     "_xsrf": xsrf,
-                    "phone_num": "13144485182",
-                    "password": "CAISIYUAN"
+                    "phone_num": "your_zhihu_username",
+                    "password": "your_zhihu_password"
             },
                 headers=self.headers,
                 callback=self.check_login

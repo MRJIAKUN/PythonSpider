@@ -56,8 +56,8 @@ class ZhihuSpider(scrapy.Spider):
         browser = webdriver.Chrome(executable_path="F:/chromedriver/chromedriver.exe")
         browser.get("https://www.zhihu.com/signin")
 
-        browser.find_element_by_css_selector(".SignFlow-accountInput input[name='username']").send_keys("13144485182")
-        browser.find_element_by_css_selector(".SignFlowInput div input[name='password']").send_keys("CAISIYUAN")
+        browser.find_element_by_css_selector(".SignFlow-accountInput input[name='username']").send_keys("your_zhihu_username")
+        browser.find_element_by_css_selector(".SignFlowInput div input[name='password']").send_keys("your_zhihu_password")
         browser.find_element_by_css_selector("button.SignFlow-submitButton").click()
         time.sleep(10)
         Cookies = browser.get_cookies()
